@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff2f5">
+<meta name="description" content="Our Little Universe — two years, countless memories.">
+<title>Our Little Universe ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#f4a9bb;--rose:#d87993;--ink:#59434b;--muted:#987b84;--cream:#fffaf8;--line:#f1dce2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#eab8c6 .7px,transparent .7px);background-size:17px 17px;z-index:-1}
+button{font:inherit}.serif{font-family:"Playfair Display",serif}.hidden{display:none!important}
+#lock{min-height:100svh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 20% 15%,#ffe4ec,transparent 38%),radial-gradient(circle at 80% 85%,#fbe8de,transparent 35%),#fff8f8}
+.lock-card{width:min(440px,100%);text-align:center;padding:42px 30px;border:1px solid #f4dce3;border-radius:28px;background:#ffffffd9;box-shadow:0 18px 60px #b8798c20}
+.heart{font-size:38px;color:var(--rose);animation:beat 1.5s infinite}.lock-card h1{font:600 34px "Playfair Display",serif;margin:12px 0 8px}.lock-card p{color:var(--muted);line-height:1.7}.lock-card input{width:100%;padding:15px 17px;border:1px solid var(--line);border-radius:14px;background:#fff9fa;outline:none;text-align:center;font-size:16px;margin:12px 0}.primary{border:0;border-radius:999px;padding:13px 24px;background:var(--rose);color:white;cursor:pointer;box-shadow:0 8px 20px #d8799330;transition:.2s}.primary:hover{transform:translateY(-2px);filter:brightness(1.04)}#error{min-height:22px;color:#bd5974;font-size:13px}
+@keyframes beat{50%{transform:scale(1.15)}}
+#site{display:none}.hero{min-height:92svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 22px;position:relative;overflow:hidden;background:linear-gradient(145deg,#fff1f4,#fffaf5 60%,#fcecf1)}
+.float{position:absolute;color:#e9a7b9;opacity:.55;animation:drift 8s ease-in-out infinite}.f1{top:14%;left:12%;font-size:28px}.f2{top:22%;right:13%;font-size:19px;animation-delay:2s}.f3{bottom:18%;left:18%;font-size:22px;animation-delay:1s}.f4{bottom:13%;right:16%;font-size:30px;animation-delay:3s}
+@keyframes drift{50%{transform:translateY(-18px) rotate(12deg)}}
+.hero-inner{max-width:760px;position:relative}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--rose);font-weight:700}.hero h1{font:600 clamp(48px,9vw,88px)/1.05 "Playfair Display",serif;margin:22px 0 15px;color:#684b55}.hero h1 em{color:var(--rose);font-weight:500}.hero p{color:var(--muted);font-size:16px;line-height:1.8;max-width:520px;margin:0 auto 28px}.scroll{display:inline-block;margin-top:42px;color:var(--muted);font-size:12px;letter-spacing:.12em}
+nav{position:sticky;top:0;z-index:10;background:#fffaf0eF;backdrop-filter:blur(12px);border-bottom:1px solid #f2e1e5;display:flex;justify-content:center;gap:clamp(12px,4vw,36px);padding:14px 10px;flex-wrap:wrap}nav a{font-size:12px;color:var(--muted);text-decoration:none}nav a:hover{color:var(--rose)}
+section{padding:88px 22px;scroll-margin-top:58px}.wrap{max-width:1020px;margin:auto}.section-head{text-align:center;margin-bottom:38px}.section-head .eyebrow{margin-bottom:10px}.section-head h2{font:600 clamp(32px,5vw,48px) "Playfair Display",serif;margin:0 0 12px}.section-head p{color:var(--muted);line-height:1.7;margin:0 auto;max-width:580px}
+.story{background:#fff}.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.story-card{background:#fff9fa;border:1px solid var(--line);border-radius:20px;padding:24px;text-align:center}.story-card .symbol{font-size:25px}.story-card h3{font:600 21px "Playfair Display",serif;margin:12px 0 8px}.story-card p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}
+.gallery{background:#fff8f7}.photos{columns:3 220px;column-gap:14px}.photo{break-inside:avoid;margin:0 0 14px;border-radius:18px;overflow:hidden;background:#f7e9ed;border:5px solid white;box-shadow:0 7px 22px #9c657014;cursor:pointer;position:relative}.photo img{width:100%;height:auto;display:block;transition:transform .45s}.photo:hover img{transform:scale(1.035)}.photo figcaption{padding:10px 12px;font-size:12px;color:var(--muted);background:white}
+.letter{background:linear-gradient(145deg,#fff1f4,#fffaf5)}.letter-paper{max-width:740px;margin:auto;padding:clamp(25px,6vw,58px);background:#fffdfc;border:1px solid #f2dce3;border-radius:8px 26px 26px 26px;box-shadow:0 18px 50px #9c657015;position:relative}.letter-paper:before{content:"♡";position:absolute;right:24px;top:16px;font-size:30px;color:#efc2ce}.letter-paper h3{font:600 30px "Playfair Display",serif;margin:0 0 22px;color:#805866}.letter-paper p{font:15px/2 "DM Sans",sans-serif;color:#806a71}.sign{font:italic 24px "Playfair Display",serif;color:var(--rose);margin-top:25px!important}
+.forever{text-align:center;background:#fff}.forever h2{font:600 clamp(38px,7vw,66px) "Playfair Display",serif;margin:10px 0;color:#704f5a}.forever p{color:var(--muted);line-height:1.8}.footer{padding:28px;text-align:center;color:#b08b96;font-size:12px;background:#fff8f7}
+.music{position:fixed;right:18px;bottom:18px;z-index:20;border:1px solid #f0d5de;background:#fffdfd;color:var(--rose);border-radius:999px;padding:12px 16px;box-shadow:0 8px 25px #9c657022;cursor:pointer;font-size:13px}
+.lightbox{position:fixed;inset:0;background:#24171dcc;z-index:50;display:none;place-items:center;padding:20px}.lightbox.open{display:grid}.lightbox img{max-width:min(92vw,900px);max-height:85vh;border-radius:14px}.close{position:absolute;top:18px;right:22px;color:white;font-size:30px;background:none;border:0;cursor:pointer}
+@media(max-width:650px){.story-grid{grid-template-columns:1fr}.hero{min-height:84svh}section{padding:68px 18px}.photos{columns:2 145px}.music{right:12px;bottom:12px}}
+</style>
+</head>
+<body>
+<div id="lock">
+ <div class="lock-card">
+  <div class="heart">♡</div>
+  <div class="eyebrow">a little place for us</div>
+  <h1>Our Little Universe</h1>
+  <p>A tiny universe made from our memories.<br>Masukkan password untuk membuka hadiah kecil ini, Babe.</p>
+  <input id="pass" type="password" placeholder="Our secret password" autocomplete="off">
+  <button class="primary" id="unlock">Open our universe ♡</button>
+  <div id="error"></div>
+  <small style="color:#b99aa3">hint: a sweet word for you</small>
+ </div>
+</div>
+<main id="site">
+ <header class="hero" id="home">
+  <span class="float f1">♡</span><span class="float f2">✿</span><span class="float f3">♡</span><span class="float f4">✧</span>
+  <div class="hero-inner">
+   <div class="eyebrow">to my favorite person</div>
+   <h1 class="serif">Our Little<br><em>Universe</em></h1>
+   <p>Two years, countless memories, and one person I still choose — every single day.</p>
+   <button class="primary" onclick="document.querySelector('#story').scrollIntoView({behavior:'smooth'})">Open our story ♡</button>
+   <div class="scroll">SCROLL A LITTLE ↓</div>
+  </div>
+ </header>
+ <nav><a href="#story">OUR STORY</a><a href="#memories">MEMORIES</a><a href="#letter">A LETTER</a><a href="#forever">FOREVER US</a></nav>
+ <section class="story" id="story">
+  <div class="wrap">
+   <div class="section-head"><div class="eyebrow">chapter one</div><h2>Our little story</h2><p>Not a perfect love story, but a real one. And that's what makes it ours.</p></div>
+   <div class="story-grid">
+    <article class="story-card"><div class="symbol">🌷</div><h3>Where it began</h3><p>Dari dua orang yang awalnya punya cerita masing-masing, lalu pelan-pelan belajar menjadi bagian dari cerita satu sama lain.</p></article>
+    <article class="story-card"><div class="symbol">☁️</div><h3>Through every season</h3><p>Ada tawa, rindu, salah paham, pertengkaran, dan hari-hari sulit. Kita belajar bahwa cinta juga berarti mau saling memahami.</p></article>
+    <article class="story-card"><div class="symbol">💗</div><h3>Still choosing you</h3><p>Dua tahun bukan akhir perjalanan. Ini salah satu alasan untuk terus tumbuh, memperbaiki diri, dan berjalan bersama.</p></article>
+   </div>
+  </div>
+ </section>
+ <section class="gallery" id="memories">
+  <div class="wrap">
+   <div class="section-head"><div class="eyebrow">chapter two</div><h2>Little memories</h2><p>Some moments are small, but they mean the whole world to me.</p></div>
+   <div class="photos">
+    <figure class="photo"><img src="images/memory-01.jpg" alt="Memory 1"><figcaption>Little things, big feelings ♡</figcaption></figure>
+    <figure class="photo"><img src="images/memory-02.jpg" alt="Memory 2"><figcaption>My favorite view</figcaption></figure>
+    <figure class="photo"><img src="images/memory-03.jpg" alt="Memory 3"><figcaption>Side by side</figcaption></figure>
+    <figure class="photo"><img src="images/memory-04.jpg" alt="Memory 4"><figcaption>A day to remember</figcaption></figure>
+    <figure class="photo"><img src="images/memory-05.jpg" alt="Memory 5"><figcaption>Us, in our own little world</figcaption></figure>
+    <figure class="photo"><img src="images/memory-06.jpg" alt="Memory 6"><figcaption>One more memory to keep</figcaption></figure>
+    <figure class="photo"><img src="images/memory-07.jpg" alt="Memory 7"><figcaption>Ordinary days, extraordinary you</figcaption></figure>
+    <figure class="photo"><img src="images/memory-08.jpg" alt="Memory 8"><figcaption>My safe kind of happy</figcaption></figure>
+    <figure class="photo"><img src="images/memory-09.jpg" alt="Memory 9"><figcaption>Wherever we go ♡</figcaption></figure>
+    <figure class="photo"><img src="images/memory-10.jpg" alt="Memory 10"><figcaption>And so many more to come</figcaption></figure>
+   </div>
+  </div>
+ </section>
+ <section class="letter" id="letter">
+  <div class="wrap">
+   <div class="section-head"><div class="eyebrow">chapter three</div><h2>A letter for my Babe</h2><p>A few words from my heart, just for you.</p></div>
+   <article class="letter-paper">
+    <h3>To My Babe ♡<br><span style="font-size:17px;color:#b78b98;font-weight:500">TWO YEARS, COUNTLESS MEMORIES</span></h3>
+    <p>Hai, Babe.</p>
+    <p>Selamat dua tahun untuk kita. Rasanya banyak sekali hal yang sudah kita lewati bersama. Ada hari-hari yang penuh tawa, momen sederhana yang selalu ingin aku ingat, dan tentu saja ada juga hari-hari yang tidak mudah.</p>
+    <p>Aku tahu hubungan kita tidak selalu berjalan mulus. Ada pertengkaran, kesalahpahaman, ego, dan masa-masa ketika kita mungkin sama-sama lelah. Tapi dari semua itu, aku belajar bahwa mencintai bukan berarti kita tidak pernah punya masalah.</p>
+    <p>Aku tidak ingin kita menjadi pasangan yang tidak pernah punya masalah. Aku hanya ingin kita tetap menjadi dua orang yang mau belajar memperbaiki semuanya. Mau mendengarkan, saling memahami, meminta maaf saat salah, dan tidak mudah menyerah hanya karena keadaan sedang sulit.</p>
+    <p>Terima kasih sudah menjadi bagian dari hidupku selama dua tahun ini. Terima kasih untuk setiap cerita, perhatian, waktu, dan hal-hal kecil yang mungkin terlihat sederhana, tapi berarti banyak buatku.</p>
+    <p>Aku tidak bisa menjanjikan bahwa ke depannya semuanya akan selalu mudah. Tapi aku ingin terus berusaha menjadi seseorang yang lebih baik, bukan hanya untuk diriku sendiri, tetapi juga untuk hubungan kita.</p>
+    <p>Semoga setelah dua tahun ini, masih ada banyak cerita yang bisa kita tulis bersama. Pelan-pelan saja, ya. Kita tumbuh, kita belajar, dan kita saling memilih lagi.</p>
+    <p class="sign">With all my love,<br>Your person ♡</p>
+   </article>
+  </div>
+ </section>
+ <section class="forever" id="forever">
+  <div class="wrap">
+   <div class="eyebrow">chapter four</div>
+   <div style="font-size:38px;margin:12px">♡</div>
+   <h2>Forever us.</h2>
+   <p>Thank you for being my favorite chapter.<br>Here's to the memories we've made, and all the little moments still waiting for us.</p>
+   <p style="font:italic 22px 'Playfair Display',serif;color:#d87993">I still choose you, Babe.</p>
+   <button class="primary" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to the beginning ↑</button>
+  </div>
+ </section>
+ <footer class="footer">Made with love, for our little universe ♡</footer>
+</main>
+<button class="music hidden" id="music">♫ Play our little melody</button>
+<div class="lightbox" id="lightbox"><button class="close" id="close">×</button><img id="big" alt="Our memory"></div>
+<script>
+/* Password is a sweet privacy gate, not strong website security.
+   Change this value before publishing if you want a different shared password. */
+const SECRET = "babe";
+const lock = document.getElementById("lock"), site = document.getElementById("site");
+function openSite(){
+ const val = document.getElementById("pass").value;
+ if(val.toLowerCase() === SECRET){lock.classList.add("hidden");site.style.display="block";document.getElementById("music").classList.remove("hidden");window.scrollTo(0,0);}
+ else document.getElementById("error").textContent="Belum tepat, Babe. Coba ingat kata rahasia kita ♡";
+}
+document.getElementById("unlock").addEventListener("click",openSite);
+document.getElementById("pass").addEventListener("keydown",e=>{if(e.key==="Enter")openSite()});
+document.querySelectorAll(".photo img").forEach(img=>img.addEventListener("click",()=>{document.getElementById("big").src=img.src;document.getElementById("lightbox").classList.add("open")}));
+document.getElementById("close").onclick=()=>document.getElementById("lightbox").classList.remove("open");
+document.getElementById("lightbox").onclick=e=>{if(e.target.id==="lightbox")e.currentTarget.classList.remove("open")};
+
+/* A tiny original synthesized melody; browsers start audio only after a tap. */
+let audioCtx=null, playing=false, timer=null, note=0;
+const notes=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46];
+function playNote(){
+ if(!playing||!audioCtx)return;
+ const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+ osc.type="sine";osc.frequency.value=notes[note++%notes.length];
+ gain.gain.setValueAtTime(.0001,audioCtx.currentTime);
+ gain.gain.exponentialRampToValueAtTime(.045,audioCtx.currentTime+.04);
+ gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.62);
+ osc.connect(gain);gain.connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+.65);
+}
+document.getElementById("music").onclick=async()=>{
+ const btn=document.getElementById("music");
+ if(!audioCtx)audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+ if(audioCtx.state==="suspended")await audioCtx.resume();
+ playing=!playing;
+ if(playing){playNote();timer=setInterval(playNote,680);btn.textContent="♫ Pause our little melody"}
+ else{clearInterval(timer);btn.textContent="♫ Play our little melody"}
+};
+</script>
+</body>
+</html>
