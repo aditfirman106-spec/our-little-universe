@@ -131,25 +131,23 @@ document.querySelectorAll(".photo img").forEach(img=>img.addEventListener("click
 document.getElementById("close").onclick=()=>document.getElementById("lightbox").classList.remove("open");
 document.getElementById("lightbox").onclick=e=>{if(e.target.id==="lightbox")e.currentTarget.classList.remove("open")};
 
-/* A tiny original synthesized melody; browsers start audio only after a tap. */
-let audioCtx=null, playing=false, timer=null, note=0;
-const notes=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46];
-function playNote(){
- if(!playing||!audioCtx)return;
- const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
- osc.type="sine";osc.frequency.value=notes[note++%notes.length];
- gain.gain.setValueAtTime(.0001,audioCtx.currentTime);
- gain.gain.exponentialRampToValueAtTime(.045,audioCtx.currentTime+.04);
- gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.62);
- osc.connect(gain);gain.connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+.65);
-}
-document.getElementById("music").onclick=async()=>{
- const btn=document.getElementById("music");
- if(!audioCtx)audioCtx=new (window.AudioContext||window.webkitAudioContext)();
- if(audioCtx.state==="suspended")await audioCtx.resume();
- playing=!playing;
- if(playing){playNote();timer=setInterval(playNote,680);btn.textContent="♫ Pause our little melody"}
- else{clearInterval(timer);btn.textContent="♫ Play our little melody"}
+const song = new Audio("Backstreet%20Boys%20-%20Shape%20of%20My%20Heart%20(Lyrics).mp3");
+song.loop = true;
+
+document.getElementById("music").onclick = async () => {
+ const btn = document.getElementById("music");
+
+ if (song.paused) {
+   try {
+     await song.play();
+     btn.textContent = "♫ Pause our little melody";
+   } catch (error) {
+     console.log(error);
+   }
+ } else {
+   song.pause();
+   btn.textContent = "♫ Play our little melody";
+ }
 };
 </script>
 </body>
